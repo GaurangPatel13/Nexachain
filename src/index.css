@@ -1,0 +1,453 @@
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+1p&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import "tailwindcss";
+@import "../public/assets/font/stylesheet.css";
+
+
+:root {
+  --font-manrope: "Manrope";
+  --font-poppins: "Poppins";
+  --font-sora: "Sora";
+  --font-inter: "Inter", sans-serif;
+  --font-quantico: "Quantico", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-urbanist: "Urbanist", sans-serif;
+  --font-opensans: "Open Sans", sans-serif;
+  --font-plusjakartasans: "Plus Jakarta Sans", sans-serif;
+  --font-mplus1p: "M PLUS 1p";
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-dmsans: "DM Sans", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-jersey25: "Jersey 25", sans-serif;
+  --font-heebo: "Heebo", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-satoshi-variable: "Satoshi Variable";
+  --font-showcard: "Showcard Gothic", cursive;
+  --font-rock3d: "Rock 3D";
+  --font-siemreap: "Siemreap", sans-serif;
+  --font-abeezee: "ABeeZee", sans-serif;
+  --font-podkova: "Podkova", sans-serif;
+  --font-mavenpro: "Maven Pro", sans-serif;
+  --font-chillax: "Chillax Variable";
+  --font-abel: "Abel", sans-serif;
+  --font-abril: "Abril Fatface", cursive;
+  --font-mazzard: "Mazzard H";
+  font-size: 16px;
+  --color-gray-light: #f0f2f4;
+  --color-gray-dark: #333333;
+  --color-black: #000000;
+  --color-white-translucent: rgba(255, 255, 255, 0.5);
+  --color-red-dark: #d5313d;
+  --color-red: #ff3647;
+  --color-red-light: #f14f44;
+  --color-orange: #ff980e;
+  --color-green: #2bbd81;
+  --color-purple: #a640ff;
+  --color-gray-darker: #1f1f1f;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-yellow: #ffd60a;
+  --color-blue: #226db4;
+  --color-pink: #e31587;
+  --color-rose: #e80053;
+  --color-cyan: #2bc3d2;
+  --color-maroon: #960e18;
+}
+
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.page__center {
+  padding: 0.8rem 2rem;
+}
+
+.page__center__inner {
+  padding: 0 2rem;
+}
+
+.page__center__head {
+  padding: 0.4rem 2rem 0 2rem;
+}
+
+.page__center__head__about {
+  padding: 1.5rem 2rem 0 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .page__center {
+    padding: 0.8rem 1rem;
+  }
+
+  .page__center__inner {
+    padding: 0 1rem;
+  }
+
+  .page__center__head {
+    padding: 0.4rem 1rem 0 1rem;
+  }
+
+  .page__center__head__about {
+    padding: 1.5rem 0.5rem 0 0.5rem;
+  }
+}
+
+.tab-active {
+  backdrop-filter: blur(50px);
+  background: rgba(241, 79, 68, 1);
+  background: linear-gradient(
+    360deg,
+    rgba(241, 79, 68, 1) 0%,
+    rgba(63, 63, 63, 1) 60%
+  );
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+.font-sora {
+  font-family: var(--font-sora);
+}
+.font-inter {
+  font-family: var(--font-inter);
+}
+.font-quantico {
+  font-family: var(--font-quantico);
+}
+.font-lato {
+  font-family: var(--font-lato);
+}
+.font-urbanist {
+  font-family: var(--font-urbanist);
+}
+.font-opensans {
+  font-family: var(--font-opensans);
+}
+.font-jakarta {
+  font-family: var(--font-plusjakartasans);
+}
+.font-mplus1p {
+  font-family: var(--font-mplus1p);
+}
+.font-ubuntu {
+  font-family: var(--font-ubuntu);
+}
+.font-dmsans {
+  font-family: var(--font-dmsans);
+}
+.font-roboto {
+  font-family: var(--font-roboto);
+}
+.font-heebo {
+  font-family: var(--font-heebo);
+}
+.font-jersey25 {
+  font-family: var(--font-jersey25);
+}
+.font-outfit {
+  font-family: var(--font-outfit);
+}
+.font-orbitron {
+  font-family: var(--font-orbitron);
+}
+.font-satoshi {
+  font-family: var(--font-satoshi-variable);
+}
+.font-showcard {
+  font-family: var(--font-showcard);
+}
+.font-rock3d {
+  font-family: var(--font-rock3d);
+}
+.font-siemreap {
+  font-family: var(--font-siemreap);
+}
+.font-abeezee {
+  font-family: var(--font-abeezee);
+}
+.font-roboto {
+  font-family: var(--font-roboto);
+}
+.font-mavenpro {
+  font-family: var(--font-mavenpro);
+}
+.font-podkova {
+  font-family: var(--font-podkova);
+}
+.font-chillax {
+  font-family: var(--font-chillax);
+}
+.font-abel {
+  font-family: var(--font-abel);
+}
+.font-abril {
+  font-family: var(--font-abril);
+}
+.font-mazzard {
+  font-family: var(--font-mazzard);
+}
+
+@layer utilities {
+  .stroke-red {
+    -webkit-text-stroke: 1px #ff3647;
+  }
+  .stroke-yellow {
+    -webkit-text-stroke: 1px #ff980e;
+  }
+}
+
+.glassball {
+  width: 53.2rem;
+}
+
+@media screen and (max-width: 2600px) and (min-width: 1801px) {
+  .glassball {
+    width: 65.2rem;
+  }
+
+  .heroimg {
+    width: 98rem;
+  }
+
+  .herobg,
+  .aboutheroimg {
+    height: 102rem;
+  }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1901px) {
+  .glassball {
+    width: 61rem;
+  }
+
+  .heroimg {
+    width: 98rem;
+  }
+
+  .herobg,
+  .aboutheroimg {
+    height: 102rem;
+  }
+}
+
+@media screen and (max-width: 1900px) and (min-width: 1801px) {
+  .glassball {
+    width: 59rem;
+  }
+
+  .heroimg {
+    width: 90rem;
+  }
+
+  .herobg,
+  .aboutheroimg {
+    height: 100rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .heroimg {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1535px) and (min-width: 1501px) {
+  .glassball {
+    width: 60.2rem;
+  }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1301px) {
+  .glassball {
+    width: 56.2rem;
+  }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1401px) {
+  .herobg,
+  .aboutheroimg {
+    height: 90rem;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1216px) {
+  .herobg,
+  .aboutheroimg {
+    height: 80rem;
+  }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+  .glassball {
+    width: 50.2rem;
+  }
+  .developimg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1125px) {
+  .glassball {
+    width: 48.2rem;
+  }
+  .hovertext {
+    bottom: 15%;
+  }
+  .developimg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1124px) {
+  .developimg {
+    display: none;
+  }
+  .hovertext {
+    bottom: 13%;
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  .glassball {
+    width: 43.2rem;
+  }
+}
+
+.link-hover:hover {
+  background-color: var(--hover-color);
+}
+
+.text-shadow {
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.text-nexa {
+  -webkit-text-stroke: 2px #000000;
+}
+
+.text-shadow1 {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.text-nexa1 {
+  -webkit-text-stroke: 1px #000000;
+}
+
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+/* hide scrollbar in all modern browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /*IE and Edge*/
+  scrollbar-width: none; /*Firefox*/
+}
+
+@layer utilities {
+  @keyframes scrollDown {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 100%;
+    }
+  }
+
+  .animate-scroll-bg {
+    animation: scrollDown 10s linear infinite;
+  }
+}
+
+/* index.css */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.two-border {
+  position: relative;
+  background: #6a0dad; /* Adjust the background color */
+  color: white;
+  padding: 20px;
+  border-radius: 20px; /* Adjust for rounded corners */
+  box-shadow: 0 0 0 3px #ff9900, /* First border */ 0 0 0 6px black; /* Second border */
+}
+
+
+.slide-left {
+  transform: translateX(-100%);
+}
+
+.slide-right {
+  transform: translateX(100%);
+}
+
+.slide-reset {
+  transform: translateX(0%);
+}
+
+.transition-slide {
+  transition: transform 1s ease-in-out;
+}
+
+/* Award.css */
+.carousel-wrapper {
+  will-change: transform;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.5s ease-out forwards;
+}
+
+.animate-slide-out-right {
+  animation: slideOutRight 0.4s ease-in forwards;
+}
+
+.gif-mask {
+  -webkit-mask-image: url('/assets/Nft/hero/heromask.png');
+  mask-image: url('/assets/Nft/hero/heromask.png');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
