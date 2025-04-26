@@ -3,7 +3,7 @@ import React from "react";
 
 const Marquee = () => {
   return (
-    <div className="relative w-full h-24 overflow-hidden font-chillax flex items-center">
+    <div className="relative w-full md:h-24 h-18 overflow-hidden font-chillax flex items-center">
       {/* Static Background */}
       <div className="absolute w-full h-full flex">
         <div className="bg-orange-500 w-1/5 h-full" />
@@ -13,7 +13,7 @@ const Marquee = () => {
 
       {/* Scrolling Content */}
       <motion.div
-        className="flex whitespace-nowrap text-white font-bold text-6xl tracking-wide"
+        className="flex whitespace-nowrap text-white font-bold md:text-6xl text-4xl tracking-wide"
         style={{ willChange: "transform" }}
         animate={{ x: ["-1%", "-50%"] }}
         transition={{
@@ -22,10 +22,10 @@ const Marquee = () => {
           repeat: Infinity,
         }}
       >
-        <span className="px-6">Collect your eco NTSs ✦ Collect your eco NTSs ✦</span>
-        <span className="px-6">Collect your eco NTSs ✦ Collect your eco NTSs ✦</span>
-        <span className="px-6">Collect your eco NTSs ✦ Collect your eco NTSs ✦</span>
-        <span className="px-6">Collect your eco NTSs ✦ Collect your eco NTSs ✦</span>
+        <span className="px-6">Collect your eco NTSs ✦ Collect your eco NTSs ✦ </span>
+        <span className="px-6">Collect your eco NTSs ✦ Collect your eco NTSs ✦ </span>
+        <span className="px-6">Collect your eco NTSs ✦ Collect your eco NTSs ✦ </span>
+        <span className="px-6">Collect your eco NTSs ✦ Collect your eco NTSs ✦ </span>
       </motion.div>
     </div>
   );

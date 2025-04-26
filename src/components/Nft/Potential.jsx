@@ -44,15 +44,15 @@ const Potential = () => {
   return (
     <div
       ref={sectionRef}
-      className="min-h-screen pb-20 relative overflow-hidden"
+      className="min-h-screen md:pb-20 pb-5 relative overflow-hidden"
     >
       {/* Background Image */}
       <img src={bg} alt="Background" className="w-full h-auto" />
-      <div className="w-full absolute z-20 font-chillax text-6xl gap-5 top-1/6 left-1/2 -translate-x-1/2 -translate-y-1/6 flex flex-col items-center">
-        <h1 className="text-[#1E344F]">Seamless Entry, Limitless</h1>
+      <div className="w-full absolute z-20 font-chillax md:text-6xl text-4xl sm:text-5xl text-center md:text-start gap-5 lg:top-10 xl:top-1/6 md:top-1/6 top-10 left-1/2 -translate-x-1/2 -translate-y-1/6 flex flex-col items-center">
+        <h1 className="text-[#1E344F] md:text-center lg:text-start">Seamless Entry, Limitless</h1>
         <div className="flex items-center gap-4">
-          <h1 className="text-[#FF0000]">Potential</h1>
-          <div className="w-14 rounded-full">
+          <h1 className="text-[#FF0000] leading-none">Potential</h1>
+          <div className="md:w-14 w-12 rounded-full">
             <img src={textImg} alt="" />
           </div>
         </div>
@@ -60,7 +60,7 @@ const Potential = () => {
 
       {/* small cards */}
 
-      <div className="absolute left-10 top-1/3 -translate-y-1/3 flex items-center gap-7 shadow-md p-4 bg-white rounded-2xl">
+      <div className="absolute hidden left-10 top-1/3 -translate-y-1/3 xl:flex items-center gap-7 shadow-md p-4 bg-white rounded-2xl">
         <div className="w-10 rounded-full">
           <img src={img1} alt="aastha" />
         </div>
@@ -74,7 +74,7 @@ const Potential = () => {
           </p>
         </div>
       </div>
-      <div className="absolute right-10 top-1/2 z-41 -translate-y-1/2 flex items-center gap-7 p-4 bg-[#FFFFFFCC] shadow-xl rounded-2xl">
+      <div className="absolute hidden right-10 top-1/2 z-41 -translate-y-1/2 xl:flex items-center gap-7 p-4 bg-[#FFFFFFCC] shadow-xl rounded-2xl">
         <div className="w-10 rounded-full">
           <img src={img2} alt="aastha" />
         </div>
@@ -91,15 +91,15 @@ const Potential = () => {
 
       {/* three cards */}
 
-      <div className="absolute bottom-25 left-1/2 -translate-x-1/2 w-full z-40">
-        <div className="flex gap-16 justify-center">
+      <div className="lg:absolute md:relative lg:bottom-25 lg:left-1/2 lg:-translate-x-1/2 w-full px-5 z-40 mt-5 md:mt-0">
+        <div className="flex lg:gap-16 gap-5 justify-center items-center md:items-start md:flex-row flex-col">
           {cardData.map((card, idx) => (
-            <div key={idx} className={idx === 1 ? "relative bottom-10" : ""}>
+            <div key={idx} className={idx === 1 ? "relative md:bottom-10 z-20 md:z-0" : ""}>
               <BigCard {...card} />
             </div>
           ))}
-                  <img src={line1} className="absolute top-0 left-1/3 -translate-x-1/3 w-36" alt="" />
-                  <img src={line2} className="absolute -top-5 left-2/3 -translate-x-3/4 w-44" alt="" />
+                  <img src={line1} className="hidden md:block absolute top-0 left-1/3 -translate-x-1/3 lg:w-36 md:w-24" alt="" />
+                  <img src={line2} className="hidden md:block absolute -top-5 left-2/3 -translate-x-3/4 lg:left-5/7 lg:w-44 md:w-24" alt="" />
         </div>
       </div>
 

@@ -18,9 +18,9 @@ const cardData = [
 
 const HeroCard = () => {
   return (
-    <div className='text-[#342E2E] relative z-200 -bottom-26 flex items-center justify-between px-10'>
+    <div className='text-[#342E2E] relative z-200 hidden -bottom-26 lg:flex items-center justify-between xl:px-10 lg:px-8'>
       {cardData.map((card, index) => (
-        <div key={index} className='flex items-center gap-3 p-4 min-w-[215px] bg-white rounded-2xl'>
+        <div key={index} className='flex items-center gap-3 p-4 xl:min-w-[215px] lg:min-w-[190px] bg-white rounded-2xl'>
           <div className='w-10 rounded-full'>
             <img src={card.img} alt={card.name} />
           </div>

@@ -32,6 +32,7 @@
   --font-abel: "Abel", sans-serif;
   --font-abril: "Abril Fatface", cursive;
   --font-mazzard: "Mazzard H";
+  --font-aboreto: "Aboreto", cursive;
   font-size: 16px;
   --color-gray-light: #f0f2f4;
   --color-gray-dark: #333333;
@@ -191,6 +192,10 @@ body {
 .font-mazzard {
   font-family: var(--font-mazzard);
 }
+.font-aboreto {
+  font-family: var(--font-aboreto);
+}
+
 
 @layer utilities {
   .stroke-red {
@@ -452,3 +457,8 @@ body::-webkit-scrollbar {
   mask-size: cover;
 }
 
+.orbit-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
