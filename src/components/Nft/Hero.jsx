@@ -12,11 +12,11 @@ const Hero = () => {
     <div className="w-full relative">
       <div className="space-y-5 relative z-10">
         <div className="w-full flex items-center justify-center pt-5">
-          <div className="w-54">
+          <div className="w-54 2xl:w-72">
             <img src={stars} className="w-full" alt="" />
           </div>
         </div>
-        <h1 className="text-center sm:text-6xl text-4xl text-[#1E344F] font-chillax">
+        <h1 className="text-center 2xl:text-8xl sm:text-6xl text-4xl text-[#1E344F] font-chillax">
           Powering the <span className="text-[#5552FF]">Oilconomy</span>
         </h1>
         <div className="md:min-h-screen flex flex-col items-center justify-center md:block space-y-5">

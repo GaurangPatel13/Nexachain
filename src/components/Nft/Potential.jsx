@@ -98,8 +98,8 @@ const Potential = () => {
               <BigCard {...card} />
             </div>
           ))}
-                  <img src={line1} className="hidden md:block 2xl:hidden absolute top-0 left-1/3 -translate-x-1/3 lg:w-36 md:w-24" alt="" />
-                  <img src={line2} className="hidden md:block 2xl:hidden absolute -top-5 left-2/3 -translate-x-3/4 lg:left-5/7 lg:w-44 md:w-24 xl:translate-x-5/10 xl:left-5/10" alt="" />
+                  <img src={line1} className="hidden md:block  absolute top-0 left-1/3 -translate-x-1/3 lg:w-36 md:w-24 2xl:w-48 2xl:left-3/8" alt="" />
+                  <img src={line2} className="hidden md:block  absolute -top-5 left-2/3 -translate-x-3/4 lg:left-5/7 lg:w-44 md:w-24 xl:translate-x-5/10 xl:left-5/10 2xl:right-1/4 2xl:w-48" alt="" />
         </div>
       </div>
 
