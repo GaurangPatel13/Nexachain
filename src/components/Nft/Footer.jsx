@@ -7,16 +7,16 @@ import biglogo from "/assets/Home/homehero/colorlogo.png"
 
 const Footer = () => {
   return (
-    <footer className="relative text-gray-800 pt-12 md:pb-6 pb-3 px-5">
+    <footer className="relative text-gray-800 pt-12 md:pb-6 pb-3 px-5 md:px-10">
       <div className="relative flex flex-col md:block justify-between gap-5 p-3 bg-[#EFE4FC] md:bg-transparent rounded-xl">
         <img src={bg} className="hidden md:block" alt="" />
-        <div className="md:w-30 w-full flex items-center justify-center md:absolute md:top-3 md:-left-5 lg:top-10 lg:left-0 xl:top-3 xl:-left-5">
+        <div className="md:w-30 w-full flex items-center justify-center md:absolute md:top-3 md:-left-5 lg:top-10 lg:left-0 xl:top-10 xl:left-5">
           <img src={logo} className="w-1/2 md:hidden" alt="" />
-          <img src={biglogo} className="w-1/2 hidden md:block" alt="" />
+          <img src={biglogo} className="w-1/2 2xl:w-3/4 hidden md:block" alt="" />
         </div>       
-        <div className="flex flex-col sm:flex-row flex-wrap justify-around md:absolute top-1/2 md:-translate-y-1/2 left-1/2 md:-translate-x-1/2 w-full gap-6  font-medium lg:px-40 md:px-20 font-poppins text-[#1E344F]">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-around md:absolute top-1/2 md:-translate-y-1/2 left-1/2 md:-translate-x-1/2 w-full 2xl:text-2xl gap-6 font-medium lg:px-40 md:px-20 font-poppins text-[#1E344F]">
           {/* Column 1 */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 2xl:gap-4">
             <Link to="/projects">Projects</Link>
             <Link to="/marketplace">Marketplace</Link>
             <Link to="/governance">Governance</Link>
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
 
           {/* Column 2 */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 2xl:gap-4">
             <Link to="/newsletter">Newsletter</Link>
             <Link to="/linkedin">LinkedIn</Link>
             <Link to="/youtube">YouTube</Link>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3 */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 2xl:gap-4">
             <Link to="/contact">Contact</Link>
             <Link to="/story-archive">Story Archive</Link>
             <Link to="/privacy-terms">Privacy + Terms</Link>
@@ -41,12 +41,12 @@ const Footer = () => {
             <Link to="/alphabet">Alphabet</Link>
           </div>
         </div>
-        <div className="flex md:flex-col items-center md:items-start justify-center w-full gap-5 text-3xl md:absolute lg:bottom-25 md:bottom-10 left-7">
+        <div className="flex md:flex-col items-center md:items-start justify-center w-full gap-5 2xl:text-5xl text-3xl md:absolute lg:bottom-25 md:bottom-10 left-7">
           <FaTelegramPlane className="cursor-pointer" />
           <FaDiscord className="cursor-pointer" />
           <FaTwitter className="cursor-pointer" />
         </div>
-        <h1 className="font-poppins text-xl text-center text-[#702F8A] font-aboreto md:absolute bottom-5 left-1/2 md:-translate-x-1/2">
+        <h1 className="font-poppins text-xl 2xl:text-3xl text-center text-[#702F8A] font-aboreto md:absolute bottom-5 left-1/2 md:-translate-x-1/2">
           All Rights Reserved 2025
         </h1>
       </div>

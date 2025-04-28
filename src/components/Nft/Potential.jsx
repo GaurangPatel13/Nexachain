@@ -48,11 +48,11 @@ const Potential = () => {
     >
       {/* Background Image */}
       <img src={bg} alt="Background" className="w-full h-auto" />
-      <div className="w-full absolute z-20 font-chillax md:text-6xl text-4xl sm:text-5xl text-center md:text-start gap-5 lg:top-10 xl:top-1/6 md:top-1/6 top-10 left-1/2 -translate-x-1/2 -translate-y-1/6 flex flex-col items-center">
+      <div className="w-full absolute z-20 font-chillax 2xl:text-8xl md:text-6xl text-4xl sm:text-5xl text-center md:text-start gap-5 lg:top-10 xl:top-1/6 md:top-1/6 top-10 left-1/2 -translate-x-1/2 -translate-y-1/6 flex flex-col items-center">
         <h1 className="text-[#1E344F] md:text-center lg:text-start">Seamless Entry, Limitless</h1>
         <div className="flex items-center gap-4">
           <h1 className="text-[#FF0000] leading-none">Potential</h1>
-          <div className="md:w-14 w-12 rounded-full">
+          <div className="md:w-14 w-12 2xl:w-20 rounded-full">
             <img src={textImg} alt="" />
           </div>
         </div>
@@ -61,12 +61,12 @@ const Potential = () => {
       {/* small cards */}
 
       <div className="absolute hidden left-10 top-1/3 -translate-y-1/3 xl:flex items-center gap-7 shadow-md p-4 bg-white rounded-2xl">
-        <div className="w-10 rounded-full">
+        <div className="w-10 2xl:w-16 rounded-full">
           <img src={img1} alt="aastha" />
         </div>
         <div>
-          <h6 className="font-poppin text-xl font-inter">Aastha</h6>
-          <p className="text-sm font-abel">
+          <h6 className="font-poppin text-xl 2xl:text-3xl font-inter">Aastha</h6>
+          <p className="text-sm 2xl:text-lg font-abel">
             Earn{" "}
             <span className={`font-semibold font-abril text-[#FF7051]`}>
               $1000
@@ -75,12 +75,12 @@ const Potential = () => {
         </div>
       </div>
       <div className="absolute hidden right-10 top-1/2 z-41 -translate-y-1/2 xl:flex items-center gap-7 p-4 bg-[#FFFFFFCC] shadow-xl rounded-2xl">
-        <div className="w-10 rounded-full">
+        <div className="w-10 2xl:w-16 rounded-full">
           <img src={img2} alt="aastha" />
         </div>
         <div>
-          <h6 className="font-poppin text-xl font-inter">Aastha</h6>
-          <p className="text-sm font-abel">
+          <h6 className="font-poppin text-xl 2xl:text-3xl font-inter">Aastha</h6>
+          <p className="text-sm 2xl:text-lg font-abel">
             Earn{" "}
             <span className={`font-semibold font-abril text-[#FF7051]`}>
               $1000
@@ -98,8 +98,8 @@ const Potential = () => {
               <BigCard {...card} />
             </div>
           ))}
-                  <img src={line1} className="hidden md:block absolute top-0 left-1/3 -translate-x-1/3 lg:w-36 md:w-24" alt="" />
-                  <img src={line2} className="hidden md:block absolute -top-5 left-2/3 -translate-x-3/4 lg:left-5/7 lg:w-44 md:w-24" alt="" />
+                  <img src={line1} className="hidden md:block 2xl:hidden absolute top-0 left-1/3 -translate-x-1/3 lg:w-36 md:w-24" alt="" />
+                  <img src={line2} className="hidden md:block 2xl:hidden absolute -top-5 left-2/3 -translate-x-3/4 lg:left-5/7 lg:w-44 md:w-24 xl:translate-x-5/10 xl:left-5/10" alt="" />
         </div>
       </div>
 
