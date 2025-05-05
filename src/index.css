@@ -33,6 +33,10 @@
   --font-abril: "Abril Fatface", cursive;
   --font-mazzard: "Mazzard H";
   --font-aboreto: "Aboreto", cursive;
+  --font-arial: "Arial", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-grotesk: "Space Grotesk", sans-serif;
+  --font-syne: "Syne", sans-serif;
   font-size: 16px;
   --color-gray-light: #f0f2f4;
   --color-gray-dark: #333333;
@@ -191,6 +195,18 @@ body {
 }
 .font-aboreto {
   font-family: var(--font-aboreto);
+}
+.font-arial {
+  font-family: var(--font-arial);
+}
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+.font-grotesk {
+  font-family: var(--font-grotesk);
+}
+.font-syne {
+  font-family: var(--font-syne);
 }
 
 

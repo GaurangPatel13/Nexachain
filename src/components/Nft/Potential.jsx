@@ -60,7 +60,7 @@ const Potential = () => {
 
       {/* small cards */}
 
-      <div className="absolute hidden left-10 top-1/3 -translate-y-1/3 xl:flex items-center gap-7 shadow-md p-4 bg-white rounded-2xl">
+      <div className="absolute hidden left-10 top-1/3 xl:min-w-54 -translate-y-1/3 xl:flex items-center gap-7 shadow-md p-4 bg-white rounded-2xl">
         <div className="w-10 2xl:w-16 rounded-full">
           <img src={img1} alt="aastha" />
         </div>
@@ -74,7 +74,7 @@ const Potential = () => {
           </p>
         </div>
       </div>
-      <div className="absolute hidden right-10 top-1/2 z-41 -translate-y-1/2 xl:flex items-center gap-7 p-4 bg-[#FFFFFFCC] shadow-xl rounded-2xl">
+      <div className="absolute hidden right-10 top-1/2 xl:min-w-54 z-41 -translate-y-1/2 xl:flex items-center gap-7 p-4 bg-[#FFFFFFCC] shadow-xl rounded-2xl">
         <div className="w-10 2xl:w-16 rounded-full">
           <img src={img2} alt="aastha" />
         </div>

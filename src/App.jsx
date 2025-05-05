@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter , Routes, Route } from "react-router-dom";
 import Nft from "./pages/Nft";
+import Wallet from "./pages/Wallet";
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./pages/Home"));
@@ -35,6 +36,7 @@ const App = () => {
             element={<div>Customers Page Coming Soon</div>}
           />
           <Route path="/nft" element={<Nft />} />
+          <Route path="/wallet" element={<Wallet />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

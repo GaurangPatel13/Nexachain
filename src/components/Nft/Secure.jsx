@@ -22,7 +22,7 @@ const Secure = () => {
                   </div>
               </div>
               <img src={bg} alt="" />
-              <div className='md:w-3/11 font-poppins md:text-xs text-[#162639] relative z-20 md:absolute xl:bottom-10 xl:right-6 lg:bottom-5 lg:right-5 md:bottom-2 md:right-1 lg:text-sm 2xl:text-xl'>
+              <div className='md:w-3/11 font-poppins md:text-xs text-[#162639] relative z-20 md:absolute xl:bottom-10 xl:right-6 lg:bottom-5 lg:right-5 md:bottom-2 md:right-1 lg:text-sm 2xl:text-xl xl:text-lg xl:px-3 xl:text-justify'>
                   <p>Smaller currencies may often appear to have a lower carbon footprint, but that may simply be because there are fewer transactions.</p>
               </div>
           </div>
