@@ -11,6 +11,7 @@ import Primary from "../components/Wallet/Primary";
 import Learn from "../components/Wallet/Learn";
 import MainCom from "../components/Wallet/MainCom";
 import HostedWallets from "../components/Wallet/HostedWallets";
+
 import Benefits from "../components/Wallet/Benefits";
 import HostedWallet from "../components/Wallet/HostedWallet";
 import Hardware from "../components/Wallet/Hardware";
